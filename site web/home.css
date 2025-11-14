@@ -1,0 +1,26 @@
+.premier{
+   color: gold;
+   text-align: center;
+   background-color: gray;
+   background-repeat: repeat;
+   font-size: 500%;
+   margin-top: -3%;
+   margin-left: -3%;
+   margin-right: -3%;
+}
+.da{
+   color: gold;
+   text-align: justify; 
+   font-size: 300%
+}
+body{
+   background-image: url(world2025.webp);
+   background-repeat: no-repeat;
+   background-color: rgb(41, 41, 41);
+   margin-top: 3%;
+
+}
+
+.valorant{
+   color: red;
+}
