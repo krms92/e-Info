@@ -47,9 +47,19 @@ body{
     font-family: Arial, sans-serif;
     color: white;
 }
-.valorant_img{
+.valorant_img {
+    width: 650px;
+    margin-left: 5%;
+    border-radius: 10px;
+    cursor: pointer; /* change le curseur au survol */
+    transition: transform 0.2s;
+    margin-left: 1%;
+}
+
+.valorant_img:hover {
+    transform: scale(1.05); /* effet zoom léger au survol */
    width: 700px;
-   margin-left: 0.5%;
+   margin-left: 1%;
 }
 .lol{
    text-align: end;
