@@ -1,0 +1,44 @@
+.premier{
+   color: rgb(156, 133, 2);
+   text-align: center;
+   background-color: rgb(221, 220, 220);
+   background-repeat: repeat;
+   font-size: 500%;
+   margin-top: -3%;
+   margin-left: -3%;
+   margin-right: -3%;
+}
+.deuxieme{
+   color: rgb(24, 22, 13);
+   text-align: justify; 
+   font-size: 200%
+}
+body{
+   background-image: url(world2025.webp);
+   background-repeat: no-repeat;
+   background-color: rgb(41, 41, 41);
+   margin-top: 3%;
+
+}
+
+
+
+.valorant_img{
+   width: 480px;
+   margin-left: 5%;
+}
+.lol{
+   text-align: end;
+}
+.jeu_text{
+   display: flex;
+   color: rgb(10, 0, 0);
+   font-size: 200%;
+   flex-direction:row ;
+   align-content: center;
+   font-family: cursive;
+   margin-bottom: 0%;
+   margin-top: 6%;
+   margin-right: 5%;
+   justify-content: space-between;
+}
