@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- {{ i18n 'text_meta_googleverificaion_main_label' }} -->
+
+		<link rel="shortcut icon" href="//static-mail.monlycee.net/15.4.0-EEN-0.0.0/app/imgs/favicon.png" />
+
+		<title data-i18n="text_error403_pagetitle_label"></title>
+
+		<!-- STYLESHEET -->
+		<link href="//static-mail.monlycee.net/15.4.0-EEN-0.0.0/app/css/errors.css" rel="stylesheet" media="all" />
+		
+		<!-- SPECIFIC STYLESHEET -->
+		<link rel="stylesheet" media="all" href="//static-mail.monlycee.net/15.4.0-EEN-0.0.0/__DATE__/css/clients/idf/idf.css"/>
+	</head>
+
+	<body class="errorMessage">
+
+		<div id="container">
+
+			<header role="banner" id="nav-banner">
+				<h1 data-i18n="text_error403_header_label"></h1>
+			</header>
+
+			<hr />
+			<div id="wrapper">
+				<section id="info-message" role="main">
+					<h2 data-i18n="text_error403_title_label"></h2>
+
+					<p class="stressed" data-i18n="text_error403_description_label">
+					</p>
+
+					<ul class="k-buttons-bar">
+						<li>
+							<a href="#" onclick="window.history.back();return false;" data-i18n="text_error403_home_label"></a>
+						</li>
+					</ul>
+
+				</section><!-- /main -->
+			</div><!-- /wrapper -->
+
+			<footer role="contentinfo">
+				<p class="k-copyright">
+					<span data-i18n="[text]text_footer_copyright_html_page_label"></span>
+					<span></span>
+				</p>
+			</footer>
+		</div>
+
+		<script src="//static-mail.monlycee.net/15.4.0-EEN-0.0.0/app/lib/jquery.error.pages.js"></script>
+		<script src="//static-mail.monlycee.net/15.4.0-EEN-0.0.0/app/lib/i18nextForStatics.js"></script>
+		<script src="//static-mail.monlycee.net/15.4.0-EEN-0.0.0/app/lib/jquery-i18next.js"></script>
+		<script src="//static-mail.monlycee.net/15.4.0-EEN-0.0.0/app/lib/i18nextXHRBackend.js"></script>
+		<script src="//static-mail.monlycee.net/15.4.0-EEN-0.0.0/app/utils/i18nextInit.js"></script>
+
+		<script>
+			var copyrightYear = document.querySelector('.k-copyright > span:nth-child(2)');
+			copyrightYear.innerText = new Date().getFullYear();
+		</script>
+
+	</body>
+</html>
