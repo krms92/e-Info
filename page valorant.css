@@ -34,7 +34,7 @@ body {
 /* ----- HERO (TÍTULO GRANDE CON FONDO) ----- */
 
 .hero {
-    background-image: url(fondo\ valorant.jpg); /* cambia por tu imagen */
+    background-image: url(img/fondo\ valorant.jpg); /* cambia por tu imagen */
     background-position: center;
     background-size: 10%;
     background-repeat: no-repeat;
@@ -79,7 +79,7 @@ body {
     margin-top: 0;
 }
 .meilleures-équipes{
-    background-image: url(valorant-envahit-le-monde-des-consoles-de-salon-le-14-juin-2024-ps5-xbox-series.jpg); /* cambia por tu imagen */
+    background-image: url(img/valorant-envahit-le-monde-des-consoles-de-salon-le-14-juin-2024-ps5-xbox-series.jpg); /* cambia por tu imagen */
     background-position: center;
     background-size: 5%;
     background-repeat: no-repeat;
