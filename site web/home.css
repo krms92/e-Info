@@ -61,9 +61,6 @@ body{
    width: 700px;
    margin-left: 1%;
 }
-.lol{
-   text-align: end;
-}
 .jeu_text{
    display: flex;
    color: rgb(10, 0, 0);
@@ -99,9 +96,13 @@ body{
     margin-right: 3%;
 }
 .lol_img{
-   width: 700px;
-   margin-left: 10%;
-   width: 700px;            /* taille de l'image */
-    height: auto;            /* conserve les proportions */
-    border-radius: 15px; 
+    width: 640px;
+    margin-left: 5%;
+    border-radius: 10px;
+    cursor: pointer; /* change le curseur au survol */
+    transition: transform 0.2s;
+}
+.lol_img:hover {
+    transform: scale(1.05); /* effet zoom léger au survol */
+    width: 700px;
 }

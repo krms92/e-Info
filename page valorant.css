@@ -1,18 +1,11 @@
-/* ----- ESTILOS GENERALES ----- */
+/* - ESTILOS GENERALES - */
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0F1923; /* color oscuro de Valorant */
-    color: white;
-}
 
-/* ----- HEADER ----- */
 
 .top-bar {
     position: relative;
     background-color: #0F1923;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
@@ -25,17 +18,17 @@ body {
 }
 
 .title {
-    color: #FF4655; /* rojo característico de Valorant */
+    color: #FF4655; /* color de Valorant */
     font-size: 40px;
     margin: 0;
     letter-spacing: 3px;
 }
 
-/* ----- HERO (TÍTULO GRANDE CON FONDO) ----- */
+/* -- HERO  - */
 
 .hero {
-    background-image: url(img/fondo\ valorant.jpg); /* cambia por tu imagen */
-    background-position: center;
+    background-image: url(img/fondo\ valorant.jpg); /*--image de fond--*/
+    background-position: center;  /*--position*/
     background-size: 10%;
     background-repeat: no-repeat;
     background-size: cover;

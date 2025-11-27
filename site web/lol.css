@@ -1,0 +1,77 @@
+:root {
+  --green-light: #0d7a2d;
+  --green: #0b6623;
+  --green-dark: #053614;
+  --text: #e9f9ec;
+  --card-bg: rgba(255, 255, 255, 0.08);
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, var(--green-light), var(--green-dark));
+  color: var(--text);
+}
+/* Conteneur central */
+.wrap {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 20px;
+}
+/* Titre principal */
+h1 {
+  font-size: 26px;
+  margin: 0 0 18px 0;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+/* Sections */
+section {
+  background: var(--card-bg);
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+h2 {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  border-left: 4px solid var(--green-light);
+  padding-left: 8px;
+}
+/* Texte */
+p, li {
+  font-size: 15px;
+  margin: 6px 0;
+  line-height: 2;
+}
+/* Pied de page */
+.foot {
+  margin-top: 15px;
+  font-size: 14px;
+  opacity: 1;
+  text-align: center;
+}
+.accueil {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffc857; /* couleur du texte */
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  width: 150px;
+  height: auto;
+  text-align: center;
+  margin-left: 355px;
+  margin-top: 1%;
+}
+.accueil:hover {
+  transform: scale(1.1); /* grossit au survol */
+  color: #ff6f3c;        /* change de couleur si tu veux */
+}
+.accueil:active {
+  transform: scale(1.2); /* légère compression quand on clique */
+}
