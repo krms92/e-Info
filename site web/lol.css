@@ -12,6 +12,24 @@ body {
     color: #ffffff;
     line-height: 1.6;
 }
+.logo-link {
+    position: absolute; /* Position fixe pour rester visible même en scroll */
+    top: 25px;       /* Décalage depuis le haut */
+    left: 25px;      /* Décalage depuis la gauche */
+    display: block;  
+    z-index: 1000;   /* Toujours au-dessus des autres éléments */
+}
+
+.logo-img {
+    width: 80px;     /* Taille du logo, tu peux ajuster */
+    height: auto;    /* Conserve les proportions */
+    cursor: pointer; /* Curseur cliquable */
+    transition: transform 0.3s; /* Animation au survol */
+}
+
+.logo-img:hover {
+    transform: scale(1.1); /* Agrandissement léger au hover */
+}
 
 /* ======================
    HEADER
@@ -52,7 +70,7 @@ nav a {
 
 nav a:hover {
     background-color: #27ae60;
-    color: #0b0c10;
+    color: #000000;
     text-shadow: 1px 1px 3px #00000050;
 }
 
@@ -159,7 +177,7 @@ nav a:hover {
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 20px #27ae60;
+    box-shadow: 0 0 20px #4b27ae;
 }
 
 .card1 {
@@ -170,6 +188,8 @@ nav a:hover {
     overflow: hidden;        /* pour que le flou ne dépasse pas */
     color: #fff;             /* texte au-dessus */
     padding: 20px;
+    background-image: (url(worlds-lol.jpg));
+
 }
 
 .card1::before {
