@@ -1,6 +1,9 @@
 /* - ESTILOS GENERALES - */
 
-
+body{
+    background-color: #0F1923;
+    
+}
 
 .top-bar {
     position: relative;
@@ -22,6 +25,11 @@
     font-size: 40px;
     margin: 0;
     letter-spacing: 3px;
+}
+
+
+.hero h2 {
+    color: black;
 }
 
 /* -- HERO  - */
@@ -72,7 +80,7 @@
     margin-top: 0;
 }
 .meilleures-équipes{
-    background-image: url(img/valorant-envahit-le-monde-des-consoles-de-salon-le-14-juin-2024-ps5-xbox-series.jpg); /* cambia por tu imagen */
+    background-image: url(img/valorant-envahit-le-monde-des-consoles-de-salon-le-14-juin-2024-ps5-xbox-series.jpg); 
     background-position: center;
     background-size: 5%;
     background-repeat: no-repeat;
