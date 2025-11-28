@@ -1,77 +1,328 @@
-:root {
-  --green-light: #0d7a2d;
-  --green: #0b6623;
-  --green-dark: #053614;
-  --text: #e9f9ec;
-  --card-bg: rgba(255, 255, 255, 0.08);
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
 }
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(180deg, var(--green-light), var(--green-dark));
-  color: var(--text);
+
+body {
+    background-color: #0b0c10;
+    color: #ffffff;
+    line-height: 1.6;
 }
-/* Conteneur central */
-.wrap {
-  max-width: 850px;
-  margin: 40px auto;
-  padding: 20px;
+.logo-link {
+    position: absolute; /* Position fixe pour rester visible même en scroll */
+    top: 25px;       /* Décalage depuis le haut */
+    left: 25px;      /* Décalage depuis la gauche */
+    display: block;  
+    z-index: 1000;   /* Toujours au-dessus des autres éléments */
 }
-/* Titre principal */
-h1 {
-  font-size: 26px;
-  margin: 0 0 18px 0;
-  text-align: center;
-  letter-spacing: 1px;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+
+.logo-img {
+    width: 80px;     /* Taille du logo, tu peux ajuster */
+    height: auto;    /* Conserve les proportions */
+    cursor: pointer; /* Curseur cliquable */
+    transition: transform 0.3s; /* Animation au survol */
 }
-/* Sections */
-section {
-  background: var(--card-bg);
-  padding: 16px;
-  border-radius: 10px;
-  margin-bottom: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+.logo-img:hover {
+    transform: scale(1.1); /* Agrandissement léger au hover */
 }
-h2 {
-  font-size: 18px;
-  margin: 0 0 10px 0;
-  border-left: 4px solid var(--green-light);
-  padding-left: 8px;
+
+/* ======================
+   HEADER
+   ====================== */
+header {
+    background-color: #1b2a41;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
-/* Texte */
-p, li {
-  font-size: 15px;
-  margin: 6px 0;
-  line-height: 2;
+
+header h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #00000080;
+    color: #ffffff;
+    margin-bottom: 10px;
 }
-/* Pied de page */
-.foot {
-  margin-top: 15px;
-  font-size: 14px;
-  opacity: 1;
-  text-align: center;
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
 }
-.accueil {
-  display: inline-block;
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffc857; /* couleur du texte */
-  text-decoration: none;
-  transition: transform 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-  width: 150px;
-  height: auto;
-  text-align: center;
-  margin-left: 355px;
-  margin-top: 1%;
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
-.accueil:hover {
-  transform: scale(1.1); /* grossit au survol */
-  color: #ff6f3c;        /* change de couleur si tu veux */
+
+nav a:hover {
+    background-color: #27ae60;
+    color: #000000;
+    text-shadow: 1px 1px 3px #00000050;
 }
-.accueil:active {
-  transform: scale(1.2); /* légère compression quand on clique */
+
+/* ======================
+   HERO SECTION
+   ====================== */
+.hero-image {
+    height: 450px;
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background-image: url(lol\ esport.jpg);
+    border-radius: 15px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #00000080;
+}
+
+.hero-text h2 {
+    font-size: 3.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #27ae60;
+    color: #ffffff;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    box-shadow: 0 0 5px #27ae60;
+}
+
+.btn:hover {
+    background-color: #2ecc71;
+    box-shadow: 0 0 15px #2ecc71;
+}
+
+/* ======================
+   NEWS CARDS
+   ====================== */
+#news {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#news h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px #00000080;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 15px;
+    width: 270px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #4b27ae;
+}
+
+.card1 {
+    position: relative;      /* nécessaire pour le pseudo-élément */
+    width: 270px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;        /* pour que le flou ne dépasse pas */
+    color: #fff;             /* texte au-dessus */
+    padding: 20px;
+    background-image: (url(worlds-lol.jpg));
+
+}
+
+.card1::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('wo');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);      /* flou uniquement sur l'image */
+    z-index: 0;              /* derrière le texte */
+}
+
+.card1 .card-content {
+    position: relative;
+    z-index: 1;              /* texte au-dessus du pseudo-élément flou */
+}
+
+.card h3 {
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px #00000050;
+}
+
+.card p {
+    font-size: 1em;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px #00000030;
+}
+
+/* ======================
+   TEAMS SECTION
+   ====================== */
+#teams {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #145a32;
+}
+
+#teams h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px #00000080;
+}
+
+#teams ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#teams li {
+    background-color: #27ae60;
+    padding: 15px 25px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    text-shadow: 1px 1px 2px #00000050;
+}
+
+#teams li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #2ecc71;
+}
+
+/* ======================
+   SCHEDULE SECTION
+   ====================== */
+#schedule {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1b2a41;
+}
+
+#schedule h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px #00000080;
+}
+
+#schedule table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#schedule th, #schedule td {
+    border: 1px solid #27ae60;
+    padding: 12px;
+    transition: 0.3s;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+#schedule th {
+    background-color: #145a32;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+#schedule td {
+    background-color: #1b2a41;
+    color: #ffffff;
+}
+
+#schedule tr:hover td {
+    background-color: #27ae60;
+    color: #0b0c10;
+}
+
+/* ======================
+   FOOTER
+   ====================== */
+footer {
+    background-color: #145a32;
+    text-align: center;
+    padding: 25px 0;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
