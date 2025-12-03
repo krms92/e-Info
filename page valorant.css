@@ -2,6 +2,7 @@
 
 body{
     background-color: #0F1923;
+    color: white;
     
 }
 
@@ -105,3 +106,4 @@ body{
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
+

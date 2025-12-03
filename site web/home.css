@@ -98,3 +98,22 @@ header {
     color: #ffffff;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
+
+
+/* Bouton de connexion en haut à droite */
+.btn-connexion {
+    position: absolute; /* Positionnement absolu */
+    top: 20px;          /* Décalage depuis le haut du header */
+    right: 20px;        /* Décalage depuis la droite */
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-connexion:hover {
+    background-color: #2ecc71;
+}

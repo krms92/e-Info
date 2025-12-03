@@ -177,7 +177,7 @@ nav a:hover {
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 20px #4b27ae;
+    box-shadow: 0 0 20px #4bc04b;
 }
 
 .card1 {
