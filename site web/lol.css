@@ -192,21 +192,6 @@ nav a:hover {
 
 }
 
-.card1::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-image: url('wo');
-    background-size: cover;
-    background-position: center;
-    filter: blur(5px);      /* flou uniquement sur l'image */
-    z-index: 0;              /* derrière le texte */
-}
-
-.card1 .card-content {
-    position: relative;
-    z-index: 1;              /* texte au-dessus du pseudo-élément flou */
-}
 
 .card h3 {
     font-size: 1.3em;
